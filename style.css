@@ -1,0 +1,414 @@
+/* --- Globala stilar & CSS-variabler --- */
+:root {
+    --primary-color: #2b2e2a;    /* Mörk dämpad skiffer/grön */
+    --accent-color: #5c675a;     /* Olivtonat mjukt grönt */
+    --light-bg: #fbf9f6;         /* Sand/Off-white ton för lyxig känsla */
+    --text-color: #333333;       /* Mörkgrå för optimal läsbarhet */
+    --white: #ffffff;
+    --border-color: #e0dbd5;
+    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.max-width-small {
+    max-width: 600px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #f4ede4;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    background: #e6dfd5;
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.badge.bg-accent {
+    background: var(--accent-color);
+    color: var(--white);
+}
+
+/* --- Navigation --- */
+.navbar {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: table;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    display: table-cell;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--primary-color);
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.nav-links {
+    display: table-cell;
+    text-align: right;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-color);
+}
+
+/* --- Hero Element --- */
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 140px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-subtitle {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* --- Grid Layouts --- */
+.grid-2, .grid-3 {
+    display: block;
+    width: 100%;
+}
+
+.card {
+    background: var(--white);
+    padding: 40px 30px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.section-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* --- Bilder & Teasers --- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.teaser-image img, .product-gallery img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.teaser-text {
+    padding: 20px 0;
+}
+
+.teaser-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.teaser-text p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.page-image-container {
+    margin-bottom: 30px;
+}
+
+.centered-image {
+    margin: 0 auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* --- Knappar --- */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #40443f;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.btn-light {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.cta-group .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* --- Produktdetaljer --- */
+.price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 15px 0;
+    color: var(--accent-color);
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.description ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.description li {
+    margin-bottom: 8px;
+}
+
+/* --- Formulär --- */
+.form-container {
+    background: var(--white);
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    margin-top: 30px;
+}
+
+.product-form-box {
+    border-top: 4px solid var(--accent-color);
+}
+
+.form-subtitle {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    font-family: var(--font-stack);
+    font-size: 1rem;
+    background-color: #fafafa;
+}
+
+.form-checkbox {
+    margin-bottom: 20px;
+}
+
+.form-checkbox input {
+    margin-right: 8px;
+}
+
+.form-checkbox label {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* --- Kontaktsida --- */
+.contact-details {
+    margin: 30px 0;
+}
+
+.contact-details p {
+    margin-bottom: 12px;
+}
+
+/* --- Tacksida --- */
+.success-icon {
+    font-size: 4rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--primary-color);
+    color: #a0a59f;
+    padding: 40px 0;
+    margin-top: 80px;
+    font-size: 0.85rem;
+}
+
+/* --- Responsivitet (Tablets / Desktops) --- */
+@media (min-width: 768px) {
+    .grid-2 {
+        display: table;
+        table-layout: fixed;
+    }
+    
+    .grid-2 > div {
+        display: table-cell;
+        width: 50%;
+        vertical-align: top;
+    }
+    
+    .teaser-image, .product-gallery {
+        padding-right: 40px;
+    }
+    
+    .contact-info-block {
+        padding-right: 50px;
+    }
+    
+    .grid-3 {
+        display: table;
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 20px 0;
+        margin: 0 -20px;
+    }
+    
+    .grid-3 > div {
+        display: table-cell;
+        width: 33.333%;
+        vertical-align: top;
+    }
+}

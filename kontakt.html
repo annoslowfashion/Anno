@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta ANNO | Support och Samarbeten</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ANNO</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="produkt-1.html">Kapselgarderoben</a></li>
+                <li><a href="produkt-2.html">Remake Studio</a></li>
+                <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="contact-page section-padding">
+        <div class="container">
+            <div class="grid-2">
+                
+                <div class="contact-info-block">
+                    <h1>Kontakta oss</h1>
+                    <p class="lead">Har du frågor om våra material, din beställning eller vill du diskutera ett samarbete inom hållbarhet?</p>
+                    
+                    <div class="contact-details">
+                        <p><strong>Adress:</strong> Studio ANNO, Åsögatan 122, 116 24 Stockholm</p>
+                        <p><strong>E-post:</strong> hello@anno-studio.se</p>
+                        <p><strong>Telefon:</strong> 08-123 45 67 (Vardagar 09:00 - 12:00)</p>
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80" alt="ANNO Kontor och Butik">
+                </div>
+
+                <div class="contact-form-block">
+                    <div class="form-container standard-form">
+                        <h3>Skicka ett meddelande</h3>
+                        <form action="thank-you.html" method="GET" id="form-kontakt" class="track-form">
+                            <input type="hidden" name="conversion_source" value="kontakt_sida">
+                            
+                            <div class="form-group">
+                                <label for="contact-name">Namn *</label>
+                                <input type="text" id="contact-name" name="name" required placeholder="Ditt namn">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">E-postadress *</label>
+                                <input type="email" id="contact-email" name="email" required placeholder="namn@epost.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject">Ärende *</label>
+                                <select id="contact-subject" name="subject" required>
+                                    <option value="kundtjanst">Kundtjänst & Order</option>
+                                    <option value="remake">Frågor om Remake Studio</option>
+                                    <option value="press">Press & Samarbeten</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Meddelande *</label>
+                                <textarea id="contact-message" name="message" rows="5" required placeholder="Skriv ditt meddelande här..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Skicka Meddelande</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 ANNO Hållbart Mode. Kursen Analys och effektmätning.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

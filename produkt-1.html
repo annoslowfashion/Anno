@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapselgarderoben | ANNO - Fysisk. Etiskt. Estetiskt.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ANNO</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="produkt-1.html" class="active">Kapselgarderoben</a></li>
+                <li><a href="produkt-2.html">Remake Studio</a></li>
+                <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="product-detail section-padding">
+        <div class="container">
+            <div class="grid-2">
+                <div class="product-gallery">
+                    <img src="https://images.unsplash.com/photo-1509319117193-57bab727e09d?auto=format&fit=crop&w=800&q=80" alt="ANNO Kapselkollektion">
+                </div>
+                <div class="product-info">
+                    <span class="badge">Flaggskeppskoncept</span>
+                    <h1>ANNO Kapselgarderob</h1>
+                    <p class="price">Pris: Från 2 499 kr</p>
+                    <div class="description">
+                        <p>Vår noga sammansatta kapselgarderob består av 7 tidlösa plagg som tillsammans kan kombineras till över 30 unika outfits. Perfekt för dig som vill spara tid på morgonen, minska klädångest och samtidigt göra ett medvetet val för miljön.</p>
+                        <ul>
+                            <li>1x Skräddad kavaj i spårbar ull</li>
+                            <li>2x Skjortor i 100% ekologiskt linne</li>
+                            <li>2x T-shirts i kraftig ekologisk bomull</li>
+                            <li>2x Klassiska byxor med skräddad passform</li>
+                        </ul>
+                    </div>
+
+                    <div class="form-container product-form-box" id="hubspot-p1-placeholder">
+                        <h3>Boka personlig stilrådgivning</h3>
+                        <p class="form-subtitle">Hitta rätt storlekar och plagg för din unika kapselgarderob (Kostnadsfritt, 30 min).</p>
+                        
+                        <form action="thank-you.html" method="GET" id="form-produkt-1" class="track-form">
+                            <input type="hidden" name="conversion_source" value="produkt_1_kapsel">
+                            
+                            <div class="form-group">
+                                <label for="p1-name">Namn *</label>
+                                <input type="text" id="p1-name" name="name" required placeholder="Ditt fullständiga namn">
+                            </div>
+                            <div class="form-group">
+                                <label for="p1-email">E-postadress *</label>
+                                <input type="email" id="p1-email" name="email" required placeholder="namn@företag.se">
+                            </div>
+                            <div class="form-group">
+                                <label for="p1-phone">Telefonnummer</label>
+                                <input type="tel" id="p1-phone" name="phone" placeholder="070-000 00 00">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Boka Min Tid Now</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 ANNO Hållbart Mode. Kursen Analys och effektmätning.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

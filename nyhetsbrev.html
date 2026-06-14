@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gå med i vår rörelse | ANNO Nyhetsbrev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ANNO</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="produkt-1.html">Kapselgarderoben</a></li>
+                <li><a href="produkt-2.html">Remake Studio</a></li>
+                <li><a href="nyhetsbrev.html" class="active">Nyhetsbrev</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="newsletter-page section-padding">
+        <div class="container max-width-small">
+            <div class="text-center section-header">
+                <h1>Gå med i ANNO Journal</h1>
+                <p>Ingen spam. Bara konkreta råd om hur du vårdar dina kläder, bygger smarta stilar och får förtur när vi släpper unika plagg i vår Remake Studio.</p>
+            </div>
+
+            <div class="text-center page-image-container">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=40" alt="ANNO Hållbar livsstil" class="centered-image">
+            </div>
+
+            <div class="form-container standard-form" id="mailchimp-placeholder">
+                <form action="thank-you.html" method="GET" id="form-nyhetsbrev" class="track-form">
+                    <input type="hidden" name="conversion_source" value="nyhetsbrev_page">
+                    
+                    <div class="form-group">
+                        <label for="newsletter-email">E-postadress *</label>
+                        <input type="email" id="newsletter-email" name="email" required placeholder="Skriv din e-postadress här...">
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="newsletter-consent" name="consent" required checked>
+                        <label for="newsletter-consent">Jag godkänner ANNOs integritetspolicy och samtycker till att ta emot marknadsföring via e-post.</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Prenumerera på Journalen</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 ANNO Hållbart Mode. Kursen Analys och effektmätning.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
